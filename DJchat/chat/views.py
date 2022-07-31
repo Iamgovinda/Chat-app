@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request,"chat/home.html")
+
+def userdash(request):
+    return render(request,"chat/userdash.html")
