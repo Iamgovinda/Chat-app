@@ -6,7 +6,7 @@ from django import forms
 
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=1000)
-    password = forms.CharField(Widget=forms.PasswordInput)
+    password = forms.CharField(widget=forms.PasswordInput)
 
 class SignupForm(UserCreationForm):
     class Meta:
